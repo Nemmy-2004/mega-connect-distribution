@@ -6,8 +6,13 @@ const Hero = () => {
     <section
       id="home"
       className="min-h-screen relative flex items-center justify-center overflow-hidden"
+      style={{
+        backgroundImage: `url('/lovable-uploads/637b2a40-95d6-42b2-93a8-b60587feed75.png')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
     >
-      <div className="absolute inset-0 bg-gradient-to-b from-theme-sand/20 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-b from-theme-sand/90 to-theme-sand/70" />
       
       <div className="container mx-auto px-4 pt-20 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
@@ -28,14 +33,20 @@ const Hero = () => {
           </p>
           
           <div className="mt-10 flex flex-wrap justify-center gap-4 animate-fade-in opacity-0 [animation-delay:0.9s]">
-            <button className="px-8 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors flex items-center gap-2 group">
-              Explore Our Services
+            <a 
+              href="#products"
+              className="px-8 py-3 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors flex items-center gap-2 group"
+            >
+              Explore Our Products
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
-            </button>
+            </a>
             
-            <button className="px-8 py-3 border border-primary/20 text-primary rounded-lg hover:bg-primary/5 transition-colors">
+            <a 
+              href="#contact"
+              className="px-8 py-3 border border-primary/20 text-primary rounded-lg hover:bg-primary/5 transition-colors"
+            >
               Contact Us
-            </button>
+            </a>
           </div>
         </div>
       </div>

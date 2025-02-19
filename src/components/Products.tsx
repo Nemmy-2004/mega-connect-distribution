@@ -1,6 +1,6 @@
-
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 const productCategories = [
   {
@@ -26,7 +26,7 @@ const productCategories = [
 ];
 
 const Products = () => {
-  const [selectedCategory, setSelectedCategory] = useState(null);
+  const navigate = useNavigate();
 
   return (
     <section id="products" className="py-20 bg-white">
@@ -69,7 +69,7 @@ const Products = () => {
                   ))}
                 </ul>
                 <button
-                  onClick={() => setSelectedCategory(category)}
+                  onClick={() => navigate(`/products/${category.id}`)}
                   className="mt-4 w-full px-4 py-2 bg-primary/10 text-primary rounded-lg hover:bg-primary/20 transition-colors"
                 >
                   View Details

@@ -31,8 +31,8 @@ const About = () => {
               <div className="aspect-square rounded-2xl overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent" />
                 <img
-                  src="/placeholder.svg"
-                  alt="GIWA MEGA operations"
+                  src="/lovable-uploads/331439f7-c404-4ce1-9518-1a0fa9c07088.png"
+                  alt="GIWA MEGA warehouse operations"
                   className="w-full h-full object-cover"
                 />
               </div>

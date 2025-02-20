@@ -198,6 +198,43 @@ body {
     line-height: 1.6;
 }
 
+/* About Section */
+.about {
+    padding: 5rem 0;
+    background: #fff;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+.about-content p {
+    color: #666;
+    margin-bottom: 1.5rem;
+    line-height: 1.8;
+}
+
+.about-image {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 /* Products Section */
 .products {
     padding: 5rem 0;
@@ -256,6 +293,95 @@ body {
 
 .product-info p {
     color: #666;
+}
+
+/* Products Preview Section */
+.products-preview {
+    padding: 5rem 0;
+    background: #f8f9fa;
+}
+
+.products-preview h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.section-desc {
+    text-align: center;
+    color: #666;
+    margin-bottom: 3rem;
+}
+
+/* Detailed Products Page */
+.products-detailed {
+    padding: 8rem 0 5rem;
+}
+
+.products-detailed h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    color: #333;
+}
+
+.product-category {
+    margin-bottom: 4rem;
+}
+
+.product-category h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #8B5CF6;
+    border-bottom: 2px solid #8B5CF6;
+    padding-bottom: 0.5rem;
+}
+
+.product-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.product-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-5px);
+}
+
+.product-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 1.5rem;
+}
+
+.product-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.product-item p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.product-item ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+    color: #666;
+}
+
+.product-item ul li {
+    margin-bottom: 0.5rem;
 }
 
 /* Footer */
@@ -330,5 +456,17 @@ body {
     .services-grid {
         grid-template-columns: 1fr;
         padding: 1rem;
+    }
+    
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-image {
+        order: -1;
+    }
+    
+    .product-items {
+        grid-template-columns: 1fr;
     }
 }

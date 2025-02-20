@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
@@ -21,7 +22,7 @@ const productCategories = [
     products: [
       { name: "Yale Bread", description: "Oven fresh, Bromate Free" }
     ],
-    image: "/lovable-uploads/eac305fe-4138-4bdd-9622-0b39c425645d.png"
+    image: "/lovable-uploads/625b7a9b-04fa-4807-9212-1a21bd79524a.png"
   }
 ];
 

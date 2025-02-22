@@ -384,6 +384,86 @@ body {
     margin-bottom: 0.5rem;
 }
 
+/* Contact Section */
+.contact {
+    padding: 5rem 0;
+    background: #f8f9fa;
+}
+
+.contact h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    color: #333;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.contact-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.contact-info p {
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.contact-details {
+    margin-top: 2rem;
+}
+
+.contact-item {
+    margin-bottom: 1.5rem;
+}
+
+.contact-item strong {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.contact-item p {
+    margin: 0;
+    color: #666;
+}
+
+.contact-form form {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #333;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: vertical;
+}
+
 /* Footer */
 .footer {
     background: #1a1a1a;
@@ -433,7 +513,7 @@ body {
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Responsive Design */
+/* Responsive Design Updates */
 @media (max-width: 768px) {
     .hero h1 {
         font-size: 2.5rem;
@@ -468,5 +548,13 @@ body {
     
     .product-items {
         grid-template-columns: 1fr;
+    }
+    
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-info {
+        text-align: center;
     }
 }

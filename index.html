@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,6 +13,7 @@
             <div class="logo">GIWA MEGA</div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
                 <li><a href="#products">Products</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -107,6 +107,50 @@
         </div>
     </section>
 
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>We'd love to hear from you. Please fill out the form below or use our contact information.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <strong>Address:</strong>
+                            <p>Shop A1005, The Main Tejuosho Shopping Complex, Surulere, Lagos, Nigeria</p>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Email:</strong>
+                            <p>info@giwamega.com</p>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Phone:</strong>
+                            <p>Contact number placeholder</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -119,6 +163,7 @@
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
                         <li><a href="#products">Products</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#contact">Contact</a></li>
@@ -130,5 +175,21 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Add smooth scrolling for all internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>
